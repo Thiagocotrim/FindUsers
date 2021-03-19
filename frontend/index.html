@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Front End</title>
+  </head>
+  <body class="bg-gray-300">
+    <div class="container mx-auto p-4">
+      <h1 class="text-center font-semibold text-2xl mb-4">Pesquisa de usários</h1>
+
+      <form action="">
+        <div class="flex flex-row items-center justify-center space-x-2">
+          <label for="inputSearch">Busca:</label>
+          <input 
+            class="flex-grow" 
+            autofocus
+            id="inputSearch" 
+            type="text" 
+            value="" 
+            disabled
+          />
+          
+          <input
+            id="buttonSearch"
+            class="bg-gray-400 p-1 pl-2 pr-2 rounded-md text-gray-50" 
+            type="submit" 
+            value="Buscar"
+            disabled
+          />
+        </div>
+      </form>
+      
+      <div id="divData" class="flex flex-col mt-4 md:flex-row md:space-x-2">
+        <div id="divUsers" class="flex-grow mb-2 p-4 border border-gray-400 rounded-md">
+          Nenhum usuário filtrado com esses critérios
+        </div>
+    
+        <div id="divStatistics" class="flex-grow mb-2 p-4 border border-gray-400 rounded-md">
+          Nada a ser exibido
+        </div>
+      </div>
+
+
+    </div>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
